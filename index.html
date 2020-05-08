@@ -4,14 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
-<body>
+<body class="container-fluid">
 
+  <header class="row">
+    <div class="col text-center">
+      <h3>Slapperizer</h3>
+    </div>
+  </header>
 
+  <main class="row">
+    <div class="col-6">
+      <div class="row">
+        <div class="col-12">
+          <div class="progress">
+            <div class="progress-bar bg-primary" id="myHealthBar" role="progressbar" style="width: 100%;">Health</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
 
+          <p>Attacks</p>
+          <button class="btn btn-danger" id="fire" onclick="attack('fire')"><i class="fa fa-3x fa-fire"></i></button>
+          <button class="btn btn-primary" id="broom" onclick="attack('broom')"> <i
+              class="fas fa-3x fa-broom "></i></button>
+          <button class="btn btn-success" id="bomb" onclick="attack('bomb')"><i class="fa fa-3x fa-bomb"></i></button>
 
+        </div>
+        <div class="col-12 mt-3">
+          <p>Items</p>
+          <button class="btn btn-warning" id="camera" onclick="useItem('camera')"><i
+              class="fa fa-3x fa-camera"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-6 text-center">
+      <p>Enemy</p>
+      <div class="progress">
+        <div class="progress-bar bg-primary" id="enemyHealthBar" role="progressbar" style="width: 100%;">Health</div>
+      </div>
+      <img src="https://avatars2.githubusercontent.com/u/13141320?s=400&v=4" alt="">
+    </div>
+
+  </main>
+
+  <footer class="row">
+
+  </footer>
+
+  <script src='https://kit.fontawesome.com/d2e00f75e8.js' crossorigin='anonymous'></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
